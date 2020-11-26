@@ -21,9 +21,5 @@ const names = [
       if(a.firstname > z.firstname) { return 1; }
       return 0;
   })
-  console.log(namesArray);
-  for (i = 0; i < arrayLength; i++){
-    console.log(namesArray[i]);  
-  }
+  console.log(JSON.stringify(namesArray));
  
-

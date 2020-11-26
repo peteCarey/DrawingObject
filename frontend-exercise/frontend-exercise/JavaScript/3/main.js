@@ -29,6 +29,25 @@ const names = [
   { firstname: "Varys", titles: ["Master of Whisperers"] },
 ];
 
+console.table(names);
+//console.log(names[0][1]);
+// loop the outer array
+/* 
+for (let i = 0; i < names.length; i++) {
+  // get the size of the inner array
+  var innerArrayLength = names[i].length;
+  console.log(innerArrayLength);
+  // loop the inner array
+  for (let j = 0; j < innerArrayLength; j++) {
+      console.log('[' + i + ',' + j + '] = ' + names[i][j]);
+  }
+}
+*/
+names.forEach((name) => {
+  name.forEach((titles) => {
+      console.log(titles);
+  });
+});
 var namesArray = Array.from(names);
 arrayLength = namesArray.length;
 for (i = 0; i < arrayLength; i++){
@@ -38,24 +57,24 @@ for (i = 0; i < arrayLength; i++){
     if(a.firstname > z.firstname) { return 1; }
     return 0;
 })
-console.log(namesArray);
+//console.log(namesArray);
 for (i = 0; i < arrayLength; i++){
   // console.log(namesArray[i]); 
   var fullName =namesArray[i].titles + " " + namesArray[i].firstname + " " + namesArray[i].lastname;
   console.log(fullName);
   // console.log(namesArray[i].titles);
   var Titles = new Array( namesArray[i].titles);
-  console.log(Titles);
+  // console.log(Titles);
   
   var res = Titles.toString();
-  console.log(res);
+  // console.log(res);
   // res = Titles.replace(",","and");
   // console.log(res);
   var pos = res.indexOf(",");
-  console.log(pos);
+  // console.log(pos);
 
 }
-console.log(Titles.length);
+// console.log(Titles.length);
 var x;
 for (j in namesArray.titles){
   x +=  namesArray.titles[j].Array

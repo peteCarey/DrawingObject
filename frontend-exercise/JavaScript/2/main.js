@@ -12,14 +12,17 @@ const names = [
   { firstname: "Shae" },
   { firstname: "Varys" },
 ];
-  var namesArray = Array.from(names);
-  arrayLength = namesArray.length;
-  for (i = 0; i < arrayLength; i++){
-    }
-    namesArray.sort(function(a, z){
-      if(a.firstname < z.firstname) { return -1; }
-      if(a.firstname > z.firstname) { return 1; }
-      return 0;
-  })
-  console.log(JSON.stringify(namesArray));
- 
+var namesArray = Array.from(names);
+console.log(namesArray);
+arrayLength = namesArray.length;
+for (i = 0; i < arrayLength; i++) {}
+namesArray.sort(function (a, z) {
+  if (a.firstname < z.firstname) {
+    return -1;
+  }
+  if (a.firstname > z.firstname) {
+    return 1;
+  }
+  return 0;
+});
+// console.log(JSON.stringify(namesArray));

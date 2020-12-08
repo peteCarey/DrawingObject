@@ -28,7 +28,7 @@ const names = [
   { firstname: "Shae" },
   { firstname: "Varys", titles: ["Master of Whisperers"] },
 ];
-console.table(names);
+
 rows = names.length;
 // sort into first name order
 for (i = 0; i < rows; i++) {
@@ -52,7 +52,7 @@ for (i = 0; i < rows; i++) {
 for (let i = 0; i < rows; i++) {
   let items = names[i]["titles"];
   text = String(items);
-  if (items != null) {
+  if (items != undefined) {
     for (let n = 0; n < items.length; n++) {
       if (items.length == 1) {
         console.log(text + " " + names[i].firstname + " " + names[i].lastname);
@@ -81,10 +81,13 @@ for (let i = 0; i < rows; i++) {
       }
       if (items == "") {
         text = " ";
-      }
-      if (items.length == undefined) {
-        text = " ";
+        console.log(text + names[i].firstname + " " + names[i].lastname);
       }
     }
+  }
+
+  if (items == undefined) {
+    text = "";
+    console.log(text + names[i].firstname + " " + names[i].lastname);
   }
 }

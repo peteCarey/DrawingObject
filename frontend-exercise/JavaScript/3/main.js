@@ -28,19 +28,10 @@ const names = [
   { firstname: "Shae" },
   { firstname: "Varys", titles: ["Master of Whisperers"] },
 ];
-
-/*
-Title formatting rules:
-For a character with a single title: `King of the Castle Mark Zuckerberg`
-For a character with more than one title: `King of the Castle and Watcher of People Mark Zuckerberg`
-Optionally, for characters with more than two titles: `King of the Castle, Watcher of People and Brogrammer Mark Zuckerberg`
-*/
-
 console.table(names);
-arrayLength = names.length;
-const charTitles = [];
-
-for (i = 0; i < arrayLength; i++) {
+rows = names.length;
+// sort into first name order
+for (i = 0; i < rows; i++) {
   names.sort(function (a, z) {
     if (a.firstname < z.firstname) {
       return -1;
@@ -51,26 +42,49 @@ for (i = 0; i < arrayLength; i++) {
     return 0;
   });
 
-  for (i = 0; i < arrayLength; i++) {
-    if (names[i].lastname == undefined) {
-      var str = String(names[i].lastname);
-      var res = str.replace(undefined, " ");
-      names[i].lastname = res;
+  if (names[i].lastname == undefined) {
+    var str = String(names[i].lastname);
+    var res = str.replace(undefined, " ");
+    names[i].lastname = res;
+  }
+}
+
+for (let i = 0; i < rows; i++) {
+  let items = names[i]["titles"];
+  text = String(items);
+  if (items != null) {
+    for (let n = 0; n < items.length; n++) {
+      if (items.length == 1) {
+        console.log(text + " " + names[i].firstname + " " + names[i].lastname);
+      }
+      if (items.length == 2) {
+        // replace only comma with the word "and"
+        text = text.replace(",", " and ");
+        if (n == 1) {
+          console.log(
+            text + " " + names[i].firstname + " " + names[i].lastname
+          );
+        }
+      }
+      if (items.length == 3) {
+        // do not replace the first comma, but replace the second comma with the word "and"
+        var t = 0;
+        text = text.replace(/,/g, function (match) {
+          t++;
+          return t === 2 ? " and " : match;
+        });
+        if (n == 2) {
+          console.log(
+            text + " " + names[i].firstname + " " + names[i].lastname
+          );
+        }
+      }
+      if (items == "") {
+        text = " ";
+      }
+      if (items.length == undefined) {
+        text = " ";
+      }
     }
-
-    charTitles[i] = names[i]["titles"];
-
-    text = String(charTitles[i]);
-    var t = 0;
-    text = text.replace(/,/g, function (match) {
-      t++;
-      return t === 2 ? " and " : match;
-    });
-
-    if (text == "undefined") {
-      var res = text.replace(undefined, " ");
-      text = res;
-    }
-    console.log(text + " " + names[i].firstname + " " + names[i].lastname);
   }
 }

@@ -1,0 +1,157 @@
+.container {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+a {
+  color: #ffe66d;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/*
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+*/
+/*top-left*/
+.availability {
+  /* position: absolute; */
+  top: 8px;
+  left: 16px;
+  width: 85%;
+  color: green;
+  font-size: 1.5em;
+  background: indigo;
+  /*display: inline-block;*/
+}
+
+.heart {
+  position: absolute;
+  top: 29px;
+  right: 16px;
+
+  background: lawngreen;
+  display: inline;
+
+  /*background: url("../CSS/assets/PNGs/heart-outline.png") no-repeat;
+    margin:60px;*/
+}
+
+.heart .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  /* width: 50%;
+  height: auto; */
+
+  /* background: url("../CSS/assets/PNGs/heart-outline.png") no-repeat;
+    margin:60px;*/
+}
+
+.heart:hover .img-top {
+  display: inline;
+}
+/*
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 120%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+*/
+
+.description {
+  display: block;
+  background: green;
+  padding: 30px;
+  font-size: 2em;
+}
+
+.now {
+  display: inline-block;
+  background: pink;
+  width: 50%;
+
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.nowPrice {
+  display: inline-block;
+  background: purple;
+  width: 50%;
+
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.was {
+  display: inline;
+  background: yellow;
+  width: 50%;
+
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.wasPrice {
+  display: inline;
+  background: black;
+  color: #6d6d6d;
+  width: 50%;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+
+.stars {
+  display: inline;
+  color: #6d6d6d;
+  font-size: 2em;
+  background: black;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.quickview a {
+  color: #2f3061;
+}
+
+.quickview .btn {
+  color: #f7fff7;
+
+  background: #a1c6d7;
+  background: #13629a;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-left: 430px;
+  padding-bottom: 20px;
+  border-radius: 4px;
+  display: block;
+  font-size: 2em;
+}
+
+.quickview .btn:hover {
+  background: rgba(47, 48, 97, 80%);
+}

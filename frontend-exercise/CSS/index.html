@@ -1,51 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CSS Excerise</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      
-      /* Create two equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 100%;
-        padding: 10px;
-        height: 600px; /* Should be removed. Only for demonstration */
-      }
-      
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      img {
-        width: 100%;
-        height: auto;
-      }
-      div.picture1 {
-   width:50px; /*width of your image*/
-   height:50px; /*height of your image*/
-   background-image:url('yourimage.file');
-   margin:0; /* If you want no margin */
-   padding:0; /*if your want to padding */
-}
-      </style>
-  </head>
-  <body>
-    <div class="row">
-      <div class="column" style="background-color:#aaa;">
-        <img src="assets/PNGs/heart.png" alt="heart"  class="picture1" width = "50%">
-        <h2>Standard</h2>
-        <p style="color:rgb(3, 67, 70)">in Stock</p>
-        <img style= "border:1px solid #021a40"; src="assets/PNGs/product.png">
-        <p><b>Super Expensive New Balance Trainer</b></p>
-      </div>
-     
-    </div>
-    <p><div style="background-image: url('designs.png');"></div></p></body>
-</html>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kukri Sports</title>
 
+  
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <body >
+    <div class="container" >
+      <div class="availability">In Stock</div>
+      <div class = "heart" >
+        <img src="assets/PNGs/heart-outline.png" no-repeat alt="heart outline" >
+        <img src="assets/PNGs/heart.png"  no-repeat class="img-top" alt="heart" >
+      </div>
+      <img 
+        src="assets/PNGs/product.png"
+        alt="Trainer"
+        style="width: 50%; height: auto; background: pink"  
+      />
+      
+      <div class = "description">Super Expensive New Balance Trainer</div>
+      
+      <div class = "now">Now</div>
+      <div class = "was" >Was</div></br>
+      <div class = "nowPrice">£1099.99</div>
+      <div class = "wasPrice" >£1299.99</div>
+      <img
+        src="assets/PNGs/stars.png"
+        alt="Trainer"
+        style="width: 50%; height: auto"
+        background-color: red;
+      />
+      <div class = "stars">(52)</div>
+      <section class = "quickview">
+        <a class="btn" href="#">QUICKVIEW</a>
+      </section>
+    </div>
+  </body>
+</html>

@@ -25,16 +25,12 @@ a:hover {
   width: 85%;
   color: green;
   font-size: 1.5em;
-  background: indigo;
-  /*display: inline-block;*/
 }
 
 .heart {
   position: absolute;
   top: 29px;
   right: 16px;
-
-  background: lawngreen;
   display: inline;
 
   /*background: url("../CSS/assets/PNGs/heart-outline.png") no-repeat;
@@ -74,14 +70,12 @@ a:hover {
 
 .description {
   display: block;
-  background: green;
   padding: 30px;
   font-size: 2em;
 }
 
 .now {
   display: inline-block;
-  background: pink;
   width: 50%;
 
   padding-top: 20px;
@@ -92,7 +86,7 @@ a:hover {
 
 .nowPrice {
   display: inline-block;
-  background: purple;
+
   width: 50%;
 
   padding-top: 10px;
@@ -104,7 +98,7 @@ a:hover {
 
 .was {
   display: inline;
-  background: yellow;
+
   width: 50%;
 
   padding-top: 10px;
@@ -115,7 +109,6 @@ a:hover {
 
 .wasPrice {
   display: inline;
-  background: black;
   color: #6d6d6d;
   width: 50%;
   padding-top: 10px;
@@ -141,11 +134,11 @@ a:hover {
 .quickview .btn {
   color: #f7fff7;
 
-  background: #a1c6d7;
   background: #13629a;
   text-decoration: none;
   padding-top: 20px;
-  padding-left: 430px;
+  padding-left: 40%;
+  padding-right: 40%;
   padding-bottom: 20px;
   border-radius: 4px;
   display: block;

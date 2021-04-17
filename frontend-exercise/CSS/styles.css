@@ -53,20 +53,6 @@ a:hover {
 .heart:hover .img-top {
   display: inline;
 }
-/*
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-.centered {
-  position: absolute;
-  top: 120%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-}
-*/
 
 .description {
   display: block;
@@ -82,13 +68,13 @@ a:hover {
   padding-left: 30px;
   padding-bottom: 10px;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .nowPrice {
   display: inline-block;
 
-  width: 50%;
-
+  width: 47%;
   padding-top: 10px;
   padding-left: 30px;
   padding-bottom: 10px;
@@ -98,7 +84,7 @@ a:hover {
 
 .was {
   display: inline;
-
+  color: #6d6d6d;
   width: 50%;
 
   padding-top: 10px;
@@ -108,7 +94,7 @@ a:hover {
 }
 
 .wasPrice {
-  display: inline;
+  display: inline-block;
   color: #6d6d6d;
   width: 50%;
   padding-top: 10px;
@@ -117,7 +103,7 @@ a:hover {
   font-size: 2em;
 }
 
-.stars {
+.reviews {
   display: inline;
   color: #6d6d6d;
   font-size: 2em;
@@ -146,5 +132,5 @@ a:hover {
 }
 
 .quickview .btn:hover {
-  background: rgba(47, 48, 97, 80%);
+  background: #093757;
 }

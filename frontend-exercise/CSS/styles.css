@@ -1,0 +1,148 @@
+.container {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+a {
+  color: #ffe66d;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/*
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+*/
+/*top-left*/
+.availability {
+  /* position: absolute; */
+  top: 8px;
+  left: 16px;
+  width: 85%;
+  color: green;
+  font-size: 1.5em;
+}
+
+.heart {
+  position: absolute;
+  top: 29px;
+  right: 16px;
+  display: inline;
+
+  /*background: red;*/
+
+  /*background: url("../CSS/assets/PNGs/heart-outline.png") no-repeat;
+    margin:60px;*/
+}
+
+.heart .img-outline {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.heart .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  /* width: 50%;
+  height: auto; */
+
+  /* background: url("../CSS/assets/PNGs/heart-outline.png") no-repeat;
+    margin:60px;*/
+}
+
+.heart:hover .img-top {
+  display: inline;
+}
+
+.description {
+  display: block;
+  padding: 30px;
+  font-size: 2em;
+}
+
+.now {
+  display: inline-block;
+  width: 47%;
+
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nowPrice {
+  display: inline-block;
+
+  width: 47%;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.was {
+  display: inline;
+  color: #6d6d6d;
+  width: 50%;
+
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.wasPrice {
+  display: inline-block;
+  color: #6d6d6d;
+  width: 50%;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+
+.reviews {
+  display: inline-block;
+  width: 5%;
+  height: 5%;
+  color: #6d6d6d;
+  font-size: 2em;
+  background: black;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.quickview a {
+  color: #2f3061;
+}
+
+.quickview .btn {
+  color: #f7fff7;
+
+  background: #13629a;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-left: 40%;
+  padding-right: 40%;
+  padding-bottom: 20px;
+  border-radius: 4px;
+  display: block;
+  font-size: 2em;
+}
+
+.quickview .btn:hover {
+  background: #093757;
+}

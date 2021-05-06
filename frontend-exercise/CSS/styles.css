@@ -273,7 +273,7 @@
     display: inline;
     width: 50%;
     padding-top: 5%;
-    padding-left: 5%; /*needed - changed */
+    padding-left: 1%; /*needed - changed */
     padding-right: 30%; /*needed - changed */
     padding-bottom: 5%; /*needed - changed */
     font-size: 1.25em; /*needed - changed */
@@ -286,7 +286,7 @@
 
     width: 50%;
     padding-top: 5%;
-    padding-left: 5%; /*needed - changed */
+    padding-left: 1%; /*needed - changed */
     padding-bottom: 5%; /*needed - changed */
     padding-right: 5%; /*needed - changed */
     font-size: 1.5em; /*needed - changed */
@@ -319,16 +319,25 @@
     /* background: blue; */
   }
 
+  .stars {
+    display: inline;
+    width: 44%;
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-bottom: 5%; /*needed - changed */
+    padding-right: 0%; /*needed - changed */
+  }
+
   .reviews {
     display: inline-block;
     width: 5%;
     height: 5%;
     color: #6d6d6d;
     font-size: 1.5em;
-    /* background: black; */
     padding-top: 5%;
-    padding-left: 30%;
+    padding-left: 0%;
     padding-bottom: 5%;
+    padding-right: 5%;
   }
 
   .quickview a {

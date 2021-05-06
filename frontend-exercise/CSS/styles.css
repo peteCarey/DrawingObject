@@ -22,13 +22,11 @@
   .availability {
     display: block;
     padding-top: 0%;
-    padding-left: 0%; /*needed - changed */
-    padding-right: 30%; /*needed - changed */
-    padding-bottom: 5%; /*needed - changed */
-
+    padding-left: 0%;
+    padding-right: 30%;
+    padding-bottom: 5%;
     color: green;
-
-    font-size: 2em; /*needed - changed */
+    font-size: 2em;
   }
 
   .heart {
@@ -62,18 +60,17 @@
     width: 40%;
     height: auto;
     padding-top: 0%;
-    padding-left: 25%; /*needed - changed */
-    padding-right: 25%; /*needed - changed */
-    padding-bottom: 0%; /*needed - changed */
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 0%;
   }
 
   .description {
-    /* needed - changed */
     display: block;
     padding-top: 5%;
-    padding-left: 0%; /*needed - changed */
-    padding-right: 10%; /*needed - changed */
-    padding-bottom: 5%; /*needed - changed */
+    padding-left: 0%;
+    padding-right: 10%;
+    padding-bottom: 5%;
     font-size: 3em;
     font-weight: bold;
   }
@@ -82,22 +79,22 @@
     display: inline;
     width: 50%;
     padding-top: 5%;
-    padding-left: 0%; /*needed - changed */
-    padding-right: 20%; /*needed - changed */
-    padding-bottom: 5%; /*needed - changed */
-    font-size: 3em; /*needed - changed */
+    padding-left: 0%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    font-size: 3em;
     font-weight: bold;
   }
 
   .nowPrice {
-    display: inline; /*needed - changed */
+    display: inline;
 
     width: 50%;
     padding-top: 1%;
-    padding-left: 0%; /*needed - changed */
-    padding-bottom: 5%; /*needed - changed */
-    padding-right: 6%; /*needed - changed */
-    font-size: 3em; /*needed - changed */
+    padding-left: 0%;
+    padding-bottom: 5%;
+    padding-right: 6%;
+    font-size: 3em;
     font-weight: bold;
   }
 
@@ -105,12 +102,11 @@
     display: inline;
     color: #6d6d6d;
     width: 50%;
-
     padding-top: 5%;
     padding-left: 5%;
-    padding-bottom: 5%; /*needed - changed */
-    padding-right: 5%; /*needed - changed */
-    font-size: 3em; /*needed - changed */
+    padding-bottom: 5%;
+    padding-right: 5%;
+    font-size: 3em;
   }
 
   .wasPrice {
@@ -119,9 +115,9 @@
     width: 56%;
     padding-top: 1%;
     padding-left: 15%;
-    padding-bottom: 5%; /*needed - changed */
-    padding-right: 4%; /*needed - changed */
-    font-size: 3em; /*needed - changed */
+    padding-bottom: 5%;
+    padding-right: 4%;
+    font-size: 3em;
   }
 
   .stars {
@@ -129,8 +125,8 @@
     width: 44%;
     padding-top: 5%;
     padding-left: 5%;
-    padding-bottom: 5%; /*needed - changed */
-    padding-right: 1%; /*needed - changed */
+    padding-bottom: 5%;
+    padding-right: 1%;
   }
 
   .reviews {
@@ -154,7 +150,6 @@
   }
 
   .quickview .btn {
-    /*needed - changed */
     color: #f7fff7;
     background: #13629a;
     text-decoration: none;
@@ -199,10 +194,9 @@
     width: 100%;
     height: auto;
     padding-top: 5%;
-    padding-left: 1%; /*needed - changed */
-    padding-right: 10%; /*needed - changed */
-    padding-bottom: 15%; /*needed - changed */
-    /* background: lime; */
+    padding-left: 1%;
+    padding-right: 10%;
+    padding-bottom: 15%;
   }
 
   a {
@@ -216,13 +210,11 @@
   .availability {
     display: block;
     padding-top: 1%;
-    padding-left: 1%; /*needed - changed */
-    padding-right: 30%; /*needed - changed */
-    padding-bottom: 15%; /*needed - changed */
-
+    padding-left: 1%;
+    padding-right: 30%;
+    padding-bottom: 15%;
     color: green;
-    /* background: gray; */
-    font-size: 1.25em; /*needed - changed */
+    font-size: 1.25em;
   }
 
   .heart {
@@ -230,11 +222,6 @@
     top: 29px;
     right: 16px;
     display: inline;
-
-    /*background: red;*/
-
-    /*background: url("../CSS/assets/PNGs/heart-outline.png") no-repeat;
-    margin:60px;*/
   }
 
   .heart .img-outline {
@@ -251,11 +238,6 @@
     z-index: 99;
     width: 100%;
     height: 100%;
-    /* width: 50%;
-  height: auto; */
-
-    /* background: url("../CSS/assets/PNGs/heart-outline.png") no-repeat;
-    margin:60px;*/
   }
 
   .heart:hover .img-top {
@@ -263,38 +245,34 @@
   }
 
   .description {
-    /* needed - changed */
     display: block;
     padding-top: 5%;
-    padding-left: 1%; /*needed - changed */
-    padding-right: 10%; /*needed - changed */
-    padding-bottom: 5%; /*needed - changed */
+    padding-left: 1%;
+    padding-right: 10%;
+    padding-bottom: 5%;
     font-size: 1.25em;
     font-weight: bold;
-    /*background: purple;*/
   }
 
   .now {
     display: inline;
     width: 50%;
     padding-top: 5%;
-    padding-left: 1%; /*needed - changed */
-    padding-right: 30%; /*needed - changed */
-    padding-bottom: 5%; /*needed - changed */
-    font-size: 1.25em; /*needed - changed */
+    padding-left: 1%;
+    padding-right: 30%;
+    padding-bottom: 5%;
+    font-size: 1.25em;
     font-weight: bold;
-    /* background: green; */
   }
 
   .nowPrice {
-    display: inline; /*needed - changed */
-
+    display: inline;
     width: 50%;
     padding-top: 5%;
-    padding-left: 1%; /*needed - changed */
-    padding-bottom: 5%; /*needed - changed */
-    padding-right: 5%; /*needed - changed */
-    font-size: 1.5em; /*needed - changed */
+    padding-left: 1%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    font-size: 1.5em;
     font-weight: bold;
     /* background: yellow; */
   }
@@ -306,10 +284,9 @@
 
     padding-top: 5%;
     padding-left: 5%;
-    padding-bottom: 5%; /*needed - changed */
-    padding-right: 5%; /*needed - changed */
-    font-size: 1.25em; /*needed - changed */
-    /* background: lime; */
+    padding-bottom: 5%;
+    padding-right: 5%;
+    font-size: 1.25em;
   }
 
   .wasPrice {
@@ -318,10 +295,9 @@
     width: 44%;
     padding-top: 5%;
     padding-left: 15%;
-    padding-bottom: 5%; /*needed - changed */
-    padding-right: 0%; /*needed - changed */
-    font-size: 1.5em; /*needed - changed */
-    /* background: blue; */
+    padding-bottom: 5%;
+    padding-right: 0%;
+    font-size: 1.5em;
   }
 
   .stars {
@@ -329,8 +305,8 @@
     width: 44%;
     padding-top: 5%;
     padding-left: 1%;
-    padding-bottom: 5%; /*needed - changed */
-    padding-right: 0%; /*needed - changed */
+    padding-bottom: 5%;
+    padding-right: 0%;
   }
 
   .reviews {
@@ -350,7 +326,6 @@
   }
 
   .quickview .btn {
-    /*needed - changed */
     color: #f7fff7;
     background: #13629a;
     text-decoration: none;
